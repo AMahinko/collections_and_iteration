@@ -28,3 +28,12 @@ cities = {
   sydney: "4.2 million",
   hong_kong: "7.2 million"
 }
+
+puts coinflips
+puts colors[1]
+
+puts ages.sort
+
+ages << 0
+
+puts movies.values_at(:blade_runner)
