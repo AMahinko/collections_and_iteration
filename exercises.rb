@@ -1,4 +1,4 @@
-# Exercise 0
+# Exercise 0   ===========================================================================
 
 colors = ["black", "red"]
 
@@ -6,7 +6,7 @@ ages = [25, 30, 19]
 
 coinflips = ["heads", "heads", "heads", "heads", "heads"]
 
-people = ["Maynard Keenan", "Carl Hungus", "A third guy"]
+people = ["Maynard Keenan", "Carl Hungus", "Jim Jefferies"]
 
 sym_colors = [:black, :red]
 
@@ -29,7 +29,10 @@ cities = {
   hong_kong: "7.2 million"
 }
 
+#Exercise 1 =====================================================================================
+
 puts coinflips
+
 puts colors[1]
 
 puts ages.sort
@@ -37,3 +40,23 @@ puts ages.sort
 ages << 0
 
 puts movies.values_at(:blade_runner)
+
+#Exercise 2 ======================================================================================
+
+puts colors[-1]
+
+cities.store("Kyoto", "1.4")
+
+# puts cities
+
+coinflips.reverse!
+
+puts cities.values_at(:sydney)
+
+people.each do |person|
+puts "#{person} is pretty great."
+end
+
+# Exercise 3 ========================================================================================
+
+puts people[0..1]
