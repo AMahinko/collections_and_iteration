@@ -18,9 +18,9 @@ words = {
 }
 
 movies = {
-  fight_club: "1999",
-  blade_runner: "1982",
-  eastern_promises: "2007"
+  Fight_Club: "1999",
+  Blade_Runner: "1982",
+  Eastern_Promises: "2007"
 }
 
 cities = {
@@ -60,3 +60,15 @@ end
 # Exercise 3 ========================================================================================
 
 puts people[0..1]
+
+
+movies.each do |movie, date|
+  puts "#{movie} was released in #{date}"
+end
+
+
+ puts ages.sort.reverse!
+
+ movies.store(:Beauty_and_the_beast, ["1991", "2017"])
+
+ puts movies.values_at(:Beauty_and_the_beast)
