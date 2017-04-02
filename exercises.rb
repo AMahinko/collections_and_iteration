@@ -26,7 +26,7 @@ movies = {
 cities = {
   tijuana: 1400000,
   sydney: 4200000,
-  hong_kong: 7200000
+  beijing: 21000000
 }
 
 #Exercise 1 =====================================================================================
@@ -123,3 +123,38 @@ movies2 = {
 }
 
 keypad = [[1,2,3], [4,5,6], [7,8,9], ["*",0,"\#"]]
+
+countries = [
+
+  Britian = {
+    name: "Britain",
+    continent: "Europe",
+    island?: true
+  },
+
+  Russia = {
+    name: "Russian",
+    continent: "Europe",
+    island?: false
+  },
+
+  South_Korea = {
+    name: "South Korea",
+    continent: "Asia",
+    island?: false
+  }
+]
+
+20.times {puts "I will not skateboard in the halls."}
+skateboard = []
+20.times {skateboard << "I will not skateboard in the halls"}
+
+island_countries = []
+countries.each do |country|
+island_countries << country if country[:island?] == true
+
+end
+puts "-------------------------------------------------------------------------Islands "
+puts island_countries
+puts "-------------------------------------------------------------------------All countries "
+puts countries
