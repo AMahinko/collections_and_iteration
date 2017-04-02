@@ -1,6 +1,6 @@
 # Exercise 0   ===========================================================================
 
-colors = ["black", "red"]
+colors = ["black", "red", "silver"]
 
 ages = [25, 30, 19]
 
@@ -24,9 +24,9 @@ movies = {
 }
 
 cities = {
-  tijuana: "1.3 million",
-  sydney: "4.2 million",
-  hong_kong: "7.2 million"
+  tijuana: 1400000,
+  sydney: 4200000,
+  hong_kong: 7200000
 }
 
 #Exercise 1 =====================================================================================
@@ -45,7 +45,7 @@ puts movies.values_at(:blade_runner)
 
 puts colors[-1]
 
-cities.store("Kyoto", "1.4")
+cities.store("Kyoto", 1400000)
 
 # puts cities
 
@@ -72,3 +72,54 @@ end
  movies.store(:Beauty_and_the_beast, ["1991", "2017"])
 
  puts movies.values_at(:Beauty_and_the_beast)
+
+ # Exercise 4 ===============================================================================================
+
+ puts "EXERCISE 4 starts here ----------------------------------------------------------------------------------------------------------------------------------------------"
+
+ ages.each do |age|
+   puts age if age < 30
+ end
+
+puts ages.max
+
+heads = 0
+coinflips.each do |flip|
+  heads += 1 if flip == "heads"
+end
+puts heads
+
+people.delete("Carl Hungus")
+
+cities[:sydney] = 25
+puts cities
+
+# Exercise 5 ===========================================================================================
+
+total = 0
+cities.each do |city, pop|
+  total += pop
+end
+puts total
+
+# ages.each do |age|
+#   puts ""
+# end
+
+puts colors [1, 2]
+
+ages.each do |age|
+  age += 1
+end
+
+colors << ["Bronze", "Blue"]
+
+# Exercise 6 ==========================================================================================================
+
+movies2 = {
+  1999 => ["The Matrix", "Star Wars: Episode One", "The Mummy"],
+  2009 => ["Avatar", "Star Trek", "District 9"],
+  2019 => ["How to Train Your Dragon 3", "Toy Story 4", "Starwars: Episode 9"]
+}
+
+keypad = [[1,2,3], [4,5,6], [7,8,9], ["*",0,"\#"]]
